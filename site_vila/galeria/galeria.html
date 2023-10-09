@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_galeria.css">
+    <title>Galeria de Fotos</title>
+</head>
+
+<body>
+    <header>
+        <h1>Galeria de Fotos</h1>
+        <nav>
+            <ul>
+                <li><a href="/home/vinnie/vscodigos/codes/site_vila/inicio/index.html">Início</a></li>
+                <li><a href="/home/vinnie/vscodigos/codes/site_vila/noticias/noticias.html">Notícias</a></li>
+                <li><a href="/home/vinnie/vscodigos/codes/site_vila/eventos/eventos.html">Eventos</a></li>
+                <li><a href="/home/vinnie/vscodigos/codes/site_vila/galeria/galeria.html">Galeria</a></li>
+                <li><a href="/home/vinnie/vscodigos/codes/site_vila/contato/contato.html">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="gallery">
+        <div class="gallery-item">
+            <img src="./imgs/foto1.png" alt="Imagem 1">
+            <h3>Prainha</h3>
+            <button class="ler-sobre"> ... </button>
+            <p class="descricao">A prainha fica proximo a igreja do Espirito Santo e fica bastante movimentada
+                principalmente no dia 15 de julho, vespera do encerramendo da tão falada Festividade de Nossa Senhora do
+                Carmo.</p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="./imgs/foto2.png" alt="Imagem ">
+            <h3>Porto da Vila</h3>
+        </div>
+
+        <div class="gallery-item">
+            <img src="./imgs/foto3.png" alt="Imagem ">
+            <h3>O igarapézinho</h3>
+        </div>
+
+        <div class="gallery-item">
+            <img src="./imgs/foto4.png" alt="Imagem ">
+            <h3>Igreja Nossa Senhora do Carmo</h3>
+        </div>
+
+        <div class="gallery-item">
+            <img src="./imgs/foto5.png" alt="Imagem ">
+            <h3>Praça vista de cima</h3>
+        </div>
+
+        <div class="gallery-item">
+            <img src="./imgs/foto6.png" alt="Imagem ">
+            <h3>Por do sol</h3>
+        </div>
+
+        <div class="gallery-item">
+            <img src="./imgs/foto6.png" alt="Imagem ">
+            <h3>The sun</h3>
+        </div>
+
+        <div class="gallery-item">
+            <img src="./imgs/foto7.png" alt="Imagem ">
+            <h3>Praça da bíblia</h3>
+        </div>
+
+        <div class="gallery-item">
+            <img src="./imgs/foto8.png" alt="Imagem ">
+            <h3>Chegada pela água</h3>
+        </div>
+
+        <div class="">
+            <p>Para mais imagens visite: <a
+                    href="https://www.instagram.com/vila.do_carmo/">https://www.instagram.com/vila.do_carmo/</a></p>
+        </div>
+
+
+        <!-- Adicione mais divs com class="gallery-item" para mais imagens -->
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Vila do Carmo do Tocantins</p>
+    </footer>
+
+    <script>
+        // Adicione um evento de clique a todos os botões "ler sobre"
+        const buttons = document.querySelectorAll('.ler-sobre');
+        buttons.forEach(button => {
+            button.addEventListener('click', function () {
+                // Encontre o elemento irmão <p> com a classe "descricao"
+                const descricao = this.nextElementSibling;
+
+                // Alternar a visibilidade da descrição
+                if (descricao.style.display === 'block') {
+                    descricao.style.display = 'none';
+                } else {
+                    descricao.style.display = 'block';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

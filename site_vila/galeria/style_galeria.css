@@ -1,0 +1,109 @@
+/* Reset de margens e preenchimentos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para a galeria */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery-item {
+    width: calc(33.33% - 20px);
+    text-align: center;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.gallery-item h3 {
+    margin-top: 10px;
+}
+
+/* Estilo para o cabeçalho e rodapé (personalize conforme necessário) */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+/* Estilo para a lista ul */
+nav ul {
+    list-style: none;
+    margin-top: 10px;
+    /* Espaço superior entre a lista e o cabeçalho */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 16px;
+    /* Tamanho da fonte */
+}
+
+nav ul li a {
+    text-decoration: none;
+    /* Remova sublinhado dos links */
+    color: #fff;
+    /* Cor do texto dos links */
+    transition: color 0.3s ease;
+    /* Transição de cor suave ao passar o mouse */
+}
+
+nav ul li a:hover {
+    color: #ff5733;
+    /* Cor do texto dos links ao passar o mouse */
+}
+
+/* Estilo para a div com o texto */
+div {
+    background-color: #f0f0f0;
+    /* Cor de fundo da div */
+    padding: 10px;
+    /* Espaçamento interno da div */
+    text-align: center;
+    /* Alinhar o texto ao centro */
+}
+
+div p {
+    font-size: 16px;
+    /* Tamanho da fonte do parágrafo */
+    color: #333;
+    /* Cor do texto do parágrafo */
+}
+
+div a {
+    text-decoration: none;
+    /* Remover sublinhado dos links */
+    color: #0077cc;
+    /* Cor do texto do link */
+    font-weight: bold;
+    /* Deixa o link em negrito */
+}
+
+div a:hover {
+    color: #ff5733;
+    /* Cor do link ao passar o mouse */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
