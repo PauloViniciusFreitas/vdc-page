@@ -135,3 +135,35 @@ footer {
 footer p {
     margin: 0;
 }
+
+/* Adicione uma media query para tamanhos de tela menores */
+@media (max-width: 768px) {
+    nav ul li {
+        margin-right: 10px;
+        font-size: 14px;
+    }
+
+    .main-content {
+        max-width: 90%;
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    .main-content ul {
+        font-size: 14px;
+    }
+
+    .features {
+        flex-direction: column;
+        /* Altera a direção do flex container para coluna */
+        align-items: center;
+        /* Centraliza os elementos horizontalmente */
+    }
+
+    .feature {
+        flex-basis: 100%;
+        /* Define largura total para ocupar toda a largura da tela */
+        margin-bottom: 20px;
+        /* Adiciona espaço entre as divs */
+    }
+}
