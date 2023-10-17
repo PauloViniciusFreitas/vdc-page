@@ -77,7 +77,6 @@
                     href="https://www.instagram.com/vila.do_carmo/">https://www.instagram.com/vila.do_carmo/</a></p>
         </div>
 
-
         <!-- Adicione mais divs com class="gallery-item" para mais imagens -->
     </section>
 
@@ -85,23 +84,6 @@
         <p>&copy; 2023 Vila do Carmo do Tocantins</p>
     </footer>
 
-    <script>
-        // Adicione um evento de clique a todos os botões "ler sobre"
-        const buttons = document.querySelectorAll('.ler-sobre');
-        buttons.forEach(button => {
-            button.addEventListener('click', function () {
-                // Encontre o elemento irmão <p> com a classe "descricao"
-                const descricao = this.nextElementSibling;
-
-                // Alternar a visibilidade da descrição
-                if (descricao.style.display === 'block') {
-                    descricao.style.display = 'none';
-                } else {
-                    descricao.style.display = 'block';
-                }
-            });
-        });
-    </script>
 </body>
 
 </html>

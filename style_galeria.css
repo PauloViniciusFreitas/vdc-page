@@ -107,3 +107,17 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
+
+@media (max-width: 768px) {
+    .gallery {
+        flex-direction: column;
+        /* Display items in a column layout */
+    }
+
+    .gallery-item {
+        width: 100%;
+        /* Make each item take the full width of the container */
+        margin-bottom: 20px;
+        /* Add space between items */
+    }
+}
