@@ -23,7 +23,34 @@
         </nav>
     </header>
 
-    <section class="gallery">
+    <section class="gallery carousel slide" id="carousel_gallery">
+        <!-- <div class="carousel-indicators">
+            <button data-bs-target="carousel" dat-bs-slide-to="0"></button>
+            <button class="active" data-bs-target="carousel" dat-bs-slide-to="1"></button>
+        </div> -->
+        <section class="carousel-inner">
+            <div class="gallery-item carousel-item active">
+                <img src="./imgs/foto1.png" alt="Imagem 1">
+                <h3>Prainha</h3>
+            </div>
+
+            <div class="gallery-item carousel-item ">
+                <img src="./imgs/foto2.png" alt="Imagem ">
+                <h3>Porto da Vila</h3>
+            </div>
+
+
+        </section>
+
+        <button class="carousel-control-prev" data-bs-target="#carousel_gallery" data-bs-slide="prev"><span
+                class="carousel-control-prev-icon"></span></button>
+        <button class="carousel-control-next" data-bs-target="#carousel_gallery" data-bs-slide="next"> <span
+                class="carousel-control-next-icon"></span></button>
+    </section>
+
+
+
+    <section class="gallery ">
         <div class="gallery-item">
             <img src="./imgs/foto1.png" alt="Imagem 1">
             <h3>Prainha</h3>
@@ -81,6 +108,9 @@
         <p>&copy; 2023 Vila do Carmo do Tocantins</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>

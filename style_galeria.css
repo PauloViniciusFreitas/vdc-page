@@ -74,7 +74,7 @@ nav ul li a:hover {
 
 /* Estilo para a div com o texto */
 div {
-    background-color: #f0f0f0;
+
     /* Cor de fundo da div */
     padding: 10px;
     /* Espaçamento interno da div */
@@ -123,5 +123,5 @@ footer {
         margin-bottom: 20px;
         /* Add space between items */
     }
-    
+
 }

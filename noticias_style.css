@@ -50,11 +50,10 @@ nav ul li a:hover {
 }
 
 article {
-    width: calc(50% - 20px);
     background-color: #f0f0f0;
     margin-bottom: 20px;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 article h2 {
