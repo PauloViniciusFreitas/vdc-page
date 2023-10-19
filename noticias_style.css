@@ -14,12 +14,13 @@ header h1 {
 nav ul {
     list-style: none;
     margin-top: 10px;
+    padding: 10px;
     /* Espaço superior entre a lista e o cabeçalho */
 }
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 10px;
     font-size: 16px;
     /* Tamanho da fonte */
 }
@@ -31,6 +32,7 @@ nav ul li a {
     /* Cor do texto dos links */
     transition: color 0.3s ease;
     /* Transição de cor suave ao passar o mouse */
+    --bs-border-radius: 30px;
 }
 
 nav ul li a:hover {
