@@ -11,16 +11,30 @@
 </head>
 
 <body class="my-0">
-    <header>
-        <div>
-            <div class="my-0 btn-group">
-                <a type="button" class="btn btn-primary " href="index.html">Início</a>
-                <a type="button" class="btn btn-secondary " href="noticias.html">Notícias</a>
-                <a type="button" class="btn btn-secondary " href="eventos.html">Eventos</a>
-                <a type="button" class="btn btn-secondary " href="./galeria.html">Galeria</a>
+
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                VDC
+            </a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div id="navbarNav" class="navbar-collapse collapse">
+                <ul class="navbar-nav ">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="noticias.html">Notícias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="eventos.html">Eventos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./galeria.html">Galeria</a></li>
+                </ul>
             </div>
+
         </div>
-    </header>
+
+    </nav>
+
 
     <div class="main-content">
         <h2>Bem-Vindo à Vila do Carmo Virtual</h2>
@@ -99,14 +113,26 @@
         </div>
 
         <div class="feature">
-            <img src="./imgs/em_desenvolvimento.jpeg" alt="Imagem 3">
-            <h3>Em desenvolvimento, aguarde</h3>
-            <p class="text-monospace text-justify">Gostaria de ajudar no desenvolvimento do site?
+            <img src="./imgs/em_desenvolvimento.jpeg" alt="Imagem 2">
+            <div class="accordion" id="faq4">
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class=" accordion-button collapsed " type="button" data-bs-toggle="collapse"
+                            data-bs-target="#item4">Estamos em desenvolvimento, aguarde :)
+                        </button>
+                    </h3>
+                    <div id="item4" class="accordion-collapse " data-bs-parent="#faq4">
+                        <div class="accordion-body text-monospace">
+                            Gostaria de ajudar no desenvolvimento do site?
                 Você pode enviar contribuições tais como: ideias de design da pagina, enviando textos que poderão ser
                 adicionados aqui, enviando imagens, sugerindo novas ideias...Caso tenha interesse, visite a aba de
                 <a class=" text-success" href="./contato.html">Contatos</a> e mande uma mensagem ao
                 desenvolvedor informando sua ideia :), desde já eu agradeço.
-            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
